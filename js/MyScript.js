@@ -12,13 +12,48 @@
 // var div1=document.getElementById("div1")
 
 
-showpricebtn.onclick=function(){
-    div1.innerHTML="Naglaa"
-}
+
 
 // ////////////////////////////////////variables Declartions////////////////////////////////////
 
 var div1= document.querySelector("#div1")
-var showpricebtn = document.querySelector("show-price")
-var allproducts = document.querySelectorAll(".products li")
+var showpricebtn = document.querySelector("#show-price")
+var allproducts = document.querySelectorAll(".products h4")
+var totprice = document.querySelector("#totpricediv")
+var totpriceh3 = document.querySelector("#finalprice")
+var noofitemsh5 = document.querySelector("#noofitemsh5")
 var totalPrice=0
+var noofitems=0
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+allproducts.forEach(function(item){
+    item.onclick=function(){
+        totalPrice += +(item.getAttribute("price"))
+        div1.innerHTML += "* " + item.textContent + "<br>"
+        noofitems += noofitems + 0
+        if (div1.innerHTML != ""){
+            showpricebtn.style.display="block"
+        }
+       
+    }
+})
+
+
+
+
+
+showpricebtn.onclick=function(){
+    
+    
+    totpriceh3.innerHTML= totalPrice + " L.E"
+    noofitemsh5.innerHTML= noofitems
+    totprice.style.display="block"
+
+
+}  
+
+    
+
+
+
+// console.log(item)
