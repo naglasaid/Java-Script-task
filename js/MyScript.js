@@ -18,19 +18,23 @@
 
 var div1= document.querySelector("#div1")
 var showpricebtn = document.querySelector("#show-price")
-var allproducts = document.querySelectorAll(".products h4")
+var allproducts = document.querySelectorAll(".products span")
 var totprice = document.querySelector("#totpricediv")
 var totpriceh3 = document.querySelector("#finalprice")
 var noofitemsh5 = document.querySelector("#noofitemsh5")
 var totalPrice=0
 var noofitems=0
+var itemtitle=""
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 allproducts.forEach(function(item){
     item.onclick=function(){
         totalPrice += +(item.getAttribute("price"))
-        div1.innerHTML += "* " + item.textContent + "<br>"
-        noofitems += noofitems + 0
+        itemtitle = item.getAttribute("title")
+        div1.innerHTML+= "* " + itemtitle + "<br>" 
+        // div1.innerHTML += "* " + item.textContent + "<br>"
+        noofitems++
+        noofitemsh5.innerHTML= noofitems
         if (div1.innerHTML != ""){
             showpricebtn.style.display="block"
         }
@@ -45,8 +49,8 @@ allproducts.forEach(function(item){
 showpricebtn.onclick=function(){
     
     
-    totpriceh3.innerHTML= totalPrice + " L.E"
-    noofitemsh5.innerHTML= noofitems
+    totpriceh3.innerHTML= " <sup> <small> EGP </small> </sup> " + totalPrice  
+   
     totprice.style.display="block"
 
 

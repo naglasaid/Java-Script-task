@@ -88,27 +88,27 @@
  
 
 <!------------------------------------------------------------- welcome section start----------------------------- -->
-
-<div class="container-md text-center mt-4">
+<div class="container-md  mt-4">
   <div class="welcome row mx-2">
   
   
-  <div class="welcome-title  rounded text-center col-12 p-3 my-2 border-0 bg-light shadow rounded-5">
-    <h2 class="fw-bold rounded text-uppercase text-start ">Your Items:</h2>
+  <div class="welcome-title  rounded  col-12 p-3 my-2 border-0 bg-light shadow rounded-5">
+    <div class="row"> 
+      <div class="col-md-6" >
+    <h2 class="fw-bold rounded text-start ">Orders :</h2>
     <div id="div1" class="div1style text-start fw-b fs-4">
       
-      </div>
-      
-
+    </div>
     
-    <button id="show-price" class="btn btn-lg border-0 text-light rounded-pill ms-auto fw-bold" style="background-color: #2cbbc3;display: none;letter-spacing: 1px;"> SHOW PRICE</button>
+    <button id="show-price" class="btn btn-lg border-0 text-light rounded-pill me-auto fw-bold" style="background-color: #2cbbc3;display: none;letter-spacing: 1px;"> Show Price</button>
+  </div>
+<div id="totpricediv" class="col-md-6" style="display: none;">
+  <span class="fs-2"><i class="fas fa-shopping-cart me-auto" style="color: #2cbbc3;"></i></span>
+  <h5 id="noofitemsh5" class="p-1" style="display: inline;  border-radius: 50%;"></h5>
 
-<div id="totpricediv" style="display: none;">
-  <h3 class="fw-bold rounded  text-start" style="color: #2cbbc3;">No of Items:</h3>
-  <h5 id="noofitemsh5" class="text-start"></h5>
-  <h2 class="fw-bold rounded text-uppercase text-start ">Total Amount:</h2>
+  <h2 class="fw-bold text-start mt-2">Deal :</h2>
 
-  <h3 id="finalprice" class="text-start"></h3>
+  <h3 id="finalprice" class="text-start mt-3" style="color: maroon;"></h3>
 
   </div>
 
@@ -118,6 +118,7 @@
    </div>
     
   </div>
+</div>
   </div>
   
    <!------------------------------------------------------------- welcome section End----------------------------- -->
@@ -134,102 +135,187 @@
    <div class="row justify-content-around ">
  
      <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-       <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/11.jpg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+       <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+        <div class="img">
+          <img src="images/pet/11.jpg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+        <div class="img-overlay">
+          <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat1</span></div> 
+          <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">3000</span></div> 
+        </div>
+        </div>
         
-         <div class="my-2 products text-center"><h4 class="fw-bold" price="3000" style="letter-spacing: 1px;">Cat1</h4></div> 
-         
+         <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="3000" title="Cat1" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
          
        </div>
      </div>
-     <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2 ">
-      <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/12.jpg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-       
-        <div class="my-2 products text-center"><h4 class="fw-bold" price="4000" style="letter-spacing: 1px;">Cat2</h4></div>  
-        
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-      <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/2.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-       
-        <div class="my-2 products text-center"><h4 class="fw-bold" price="6000" style="letter-spacing: 1px;">Dog1</h4></div> 
-        
-       
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-      <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/1.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
-       
-        <div class="my-2 products text-center"><h4 class="fw-bold" price="5000" style="letter-spacing: 1px;">Cat3</h4></div> 
-        
-        
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2 ">
-     <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/4.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-      
-       <div class="my-2 products text-center"><h4 class="fw-bold" price="1000" style="letter-spacing: 1px;">Cat4</h4></div>  
-       
-     </div>
-   </div>
-   <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-     <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/cat5.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-      
-       <div class="my-2 products text-center"><h4 class="fw-bold" price="6200" style="letter-spacing: 1px;">Cat5</h4></div> 
-       
-      
-     </div>
-   </div>
-   <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-    <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/dog2.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
-     
-      <div class="my-2 products text-center"><h4 class="fw-bold" price="7000" style="letter-spacing: 1px;">Dog2</h4></div> 
-      
-      
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2 ">
-   <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/dog3.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-    
-     <div class="my-2 products text-center"><h4 class="fw-bold" price="4000" style="letter-spacing: 1px;">Dog3</h4></div>  
-     
-   </div>
- </div>
- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-   <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/dog4.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-    
-     <div class="my-2 products text-center"><h4 class="fw-bold" price="6000" style="letter-spacing: 1px;">Dog4</h4></div> 
-     
-    
-   </div>
- </div>
- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
-  <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/cat7.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
-   
-    <div class="my-2 products text-center"><h4 class="fw-bold" price="3000" style="letter-spacing: 1px;">Cat6</h4></div> 
-    
-    
-  </div>
-</div>
-<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2 ">
- <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/cat9.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-  
-   <div class="my-2 products text-center"><h4 class="fw-bold" price="4000" style="letter-spacing: 1px;">Cat7</h4></div>  
-   
- </div>
-</div>
-<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
- <div class="popup-img shadow px-4 py-4 rounded-5 position-relative bg-light" style="border-radius: 50%;"><img src="images/pet/dog1.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class=" img-thumbnail card-img-top my-2">
-  
-   <div class="my-2 products text-center"><h4 class="fw-bold" price="6000" style="letter-spacing: 1px;">Dog5</h4></div> 
-   
-  
- </div>
-</div>
- 
- 
- 
 
+     <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+      <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+       <div class="img">
+         <img src="images/pet/12.jpg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+       <div class="img-overlay">
+         <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat2</span></div> 
+         <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">5000</span></div> 
+       </div>
+       </div>
+       
+        <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="5000" title="Cat2" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+        
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+      <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+       <div class="img">
+         <img src="images/pet/dog4.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+       <div class="img-overlay">
+         <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Dog1</span></div> 
+         <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">2000</span></div> 
+       </div>
+       </div>
+       
+        <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="2000" title="Dog1" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+        
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+      <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+       <div class="img">
+         <img src="images/pet/cat88.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+       <div class="img-overlay">
+         <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat3</span></div> 
+         <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">8000</span></div> 
+       </div>
+       </div>
+       
+        <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="8000" title="Cat3" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+        
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+     <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+      <div class="img">
+        <img src="images/pet/1.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+      <div class="img-overlay">
+        <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat4</span></div> 
+        <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">8000</span></div> 
+      </div>
+      </div>
+      
+       <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="8000" title="Cat4" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+       
+     </div>
+   </div>
+
+   <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+     <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+      <div class="img">
+        <img src="images/pet/2.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+      <div class="img-overlay">
+        <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Dog2</span></div> 
+        <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">7000</span></div> 
+      </div>
+      </div>
+      
+       <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="7000" title="Dog2" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+       
+     </div>
+   </div>
+
+
+   <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+    <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+     <div class="img">
+       <img src="images/pet/4.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+     <div class="img-overlay">
+       <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat5</span></div> 
+       <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">2000</span></div> 
+     </div>
+     </div>
+     
+      <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="2000" title="Cat5" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+      
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+   <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+    <div class="img">
+      <img src="images/pet/cat7.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+    <div class="img-overlay">
+      <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat6</span></div> 
+      <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">500</span></div> 
+    </div>
+    </div>
+    
+     <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="500" title="Cat6" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+     
+   </div>
  </div>
+
+ <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+   <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+    <div class="img">
+      <img src="images/pet/dog1.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+    <div class="img-overlay">
+      <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Dog3</span></div> 
+      <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">3000</span></div> 
+    </div>
+    </div>
+    
+     <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="3000" title="Dog3" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+     
+   </div>
+ </div>
+
+ <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+  <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+   <div class="img">
+     <img src="images/pet/cat66.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+   <div class="img-overlay">
+     <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat7</span></div> 
+     <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">2000</span></div> 
+   </div>
+   </div>
+   
+    <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="2000" title="Cat7" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+    
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+  <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+   <div class="img">
+     <img src="images/pet/cat77.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+   <div class="img-overlay">
+     <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Cat8</span></div> 
+     <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">9000</span></div> 
+   </div>
+   </div>
+   
+    <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="9000" title="Cat8" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+    
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items mb-2">
+  <div class="popup-img shadow px-4 py-4 position-relative bg-light" style="border-radius: 50%;">
+   <div class="img">
+     <img src="images/pet/dog3.jpeg" style="width: 400px;height: 300px;border-radius: 50%;" class="img-thumbnail card-img-top my-2">
+   <div class="img-overlay">
+     <div class="mt-1 mb-2 pt-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">Dog4</span></div> 
+     <div class="mt-1 mb-2 text-center"><span class="fw-bold fs-5 px-4 py-2 rounded-pill" style="letter-spacing: 1px;">5000</span></div> 
+   </div>
+   </div>
+   
+    <div class="my-2 products text-center"><span class="fw-bold px-3 py-2 rounded-pill" price="5000" title="Dog4" style="letter-spacing: 1px; background-color: #2cbbc3;color: #fff; cursor: pointer;">Add Me</span></div> 
+    
+  </div>
+</div>
+     
+ </div>       <!-- row -->  
  </div>
 
 </section>
@@ -241,8 +327,8 @@
 
 
 <fotter id="fotter">
-<div class="container-fluid text-center pt-5 fs-5 text-light" style="background-color: #2cbbc3; height: 100px;">
-All Rights Are Reserved for ZMN Software &copy;
+<div class="container-fluid text-center pt-4 fs-5 text-light" style="background-color: #2cbbc3; height: 100px;">
+All Rights Are Reserved for ZMN Software 2023 &copy;
 </div>
 </fotter>
 

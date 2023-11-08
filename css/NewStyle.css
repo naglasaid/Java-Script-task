@@ -116,42 +116,27 @@ position: relative;
     
 
 /*/////////////////////////////////////////////////////////////////////////////// 3div-pop-up start//////////////////////////////////// */
-
-
-
-
-
-
-
-.img-thumbnail::before{
- position: absolute;
- content:'';
- top:0;
- left:0;
- height: 0%;
- width: 100%;
- background-color: #fdc385;
- 
-
-z-index: 30;
-
-
-transform-origin: bottom top;
+.img{
+  position: relative;
+  
 }
-
-.img-thumbnail:hover::before{
-
+.img-overlay{
   position: absolute;
- content:'';
- top:0;
- left:0;
- height: 100%;
- width: 100%;
- background-color: #fdc385;
- 
-
-z-index: 30;
+  width: 100px;
+  height: 100px;
+  top:50%;
+  left: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #fdc385;
+  
 }
+
+
+
+
+
+
 
 
 
@@ -163,13 +148,16 @@ z-index: 30;
 }
 .img-thumbnail{
   transition: .5s;
-  position: relative;
+
+  
 }
 
 .img-thumbnail:hover{
 
   transform: scale(1.1,1.1);
+  /* transform: rotateY(45deg); */
   transition: .5s;
+  
 }
 
 /*/////////////////////////////////////////////////////////////////////////////// 3div-pop-up end//////////////////////////////////// */
@@ -196,7 +184,7 @@ background: url(../images/pet/13.jpg);
     top: 0;
     left:0;
 }
-.wide-img2 .overlay button:hover{
+.wide-img2 .overlay button:hover,.wide-img2 .overlay button:focus,.wide-img2 .overlay button:active{
 background-color: transparent !important;
 
  border-color: var(--blue-color) !important; 
