@@ -106,7 +106,9 @@ position: relative;
   color:#c19d5f;
   
 }
-btn:hover{
+
+.btn:hover,.btn:focus,.btn:active{
+  
   box-shadow: none;
 
 }
