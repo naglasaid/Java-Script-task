@@ -35,7 +35,7 @@ allproducts.forEach(function(item){
         // div1.innerHTML += "* " + item.textContent + "<br>"
         noofitems++
         noofitemsh5.innerHTML= noofitems
-        if (div1.innerHTML != ""){
+        if (div1.innerHTML !== ""){
             showpricebtn.style.display="block"
         }
        
@@ -49,7 +49,7 @@ allproducts.forEach(function(item){
 showpricebtn.onclick=function(){
     
     
-    totpriceh3.innerHTML= " <sup> <small> EGP </small> </sup> " + totalPrice  
+    totpriceh3.innerHTML= " <sup> <small><b> EGP <b> </small> </sup> " + totalPrice  
    
     totprice.style.display="block"
 
