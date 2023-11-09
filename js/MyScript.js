@@ -31,7 +31,7 @@ allproducts.forEach(function(item){
     item.onclick=function(){
         totalPrice += +(item.getAttribute("price"))
         itemtitle = item.getAttribute("title")
-        div1.innerHTML+= "* " + itemtitle + "<br>" 
+        div1.innerHTML+= "<i class='fas fa-caret-right fs-5'></i>" +" " + itemtitle + "<br>" 
         // div1.innerHTML += "* " + item.textContent + "<br>"
         noofitems++
         noofitemsh5.innerHTML= noofitems

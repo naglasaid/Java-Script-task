@@ -83,7 +83,9 @@ border-color: black;
 
 /*/////////////////////////////////////////////// navbar /////////////////////*/
 
-
+.container .row{
+  /* box-shadow: 0px 2px 5px 2px silver  !important ; */
+}
 
 .welcome{
    
@@ -107,15 +109,33 @@ position: relative;
   
 }
 
-.btn:hover,.btn:focus,.btn:active{
+.products span:hover,.products span:focus,.products span:active{
   
   box-shadow: none;
+  color: black !important;
+  opacity: .8;
+  transition: .5s;
+  border:1px solid #2cbbc3 !important;
+  background-color: transparent !important;
 
+}
+
+#show-price:hover, #show-price:focus,#show-price:active{
+  box-shadow: none;
+  /* color: black !important; */
+  opacity: .8;
+  transition: .5s;
+  color:#533405 !important;
 }
 
     
 
 /*/////////////////////////////////////////////////////////////////////////////// 3div-pop-up start//////////////////////////////////// */
+.popup-img{
+  /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+}
+
+
 .img{
   position: relative;
   
@@ -128,24 +148,13 @@ position: relative;
   left: 25px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  color: #fdc385;
+  color: white;
   
 }
 
 
 
 
-
-
-
-
-
-
-.pop-img-tootip .effect span{
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  background-color: #f35525;
-  padding: 10px;
-}
 .img-thumbnail{
   transition: .5s;
 
@@ -155,10 +164,17 @@ position: relative;
 .img-thumbnail:hover{
 
   transform: scale(1.1,1.1);
-  /* transform: rotateY(45deg); */
+  
+  
   transition: .5s;
   
 }
+
+.img:hover .img-overlay{
+  color:#fdc385;
+  transition: .5s;
+}
+
 
 /*/////////////////////////////////////////////////////////////////////////////// 3div-pop-up end//////////////////////////////////// */
 
